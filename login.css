@@ -1,0 +1,65 @@
+body{
+  margin:0;
+  padding:0;
+  font-family: sans-serif;
+  background-image: url(transferir.jpg);
+  background-repeat: no-repeat;
+}
+
+.box{
+  width: 300px;
+  padding:20px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  color:white;
+  transform: translate(-50%,-50%);
+  background: rgba(0, 0, 0, 0.59);
+  text-align: center;
+  border-radius:30px;
+  /*animation: animateBg 5s linear infinite;*/
+}
+
+.box input{
+  border:2px;
+  background-color: rgba(255, 255, 255, 0.171);
+  ;/*tirou a caixa feia ao redor do username e password*/
+  display:block;
+  margin:20px auto; /*auto colocou o mesmo valor em todas as psoições, margin deu espaço entre as box*/
+  text-align:center;
+  border:14px 10px;
+  width:100px; /*espaço onde fica escrito*/
+ /* outline:none;*/
+  border-radius:24px;
+  transition:0.25s;
+  color: white;
+  padding: 10px 30px;
+}
+.box input[type="text"]:focus,.box input[type = "password"]:focus{
+  width: 130px;
+  height:20px;
+  border:5px solid rgb(103, 32, 185); /*não sei oque fiz mas fica com a cor branca e roxa ao mesmo tempo*/
+  color: white;
+}
+
+.box input[type="submit"]{
+  border: 0;
+  width:200px;
+  background:none;
+  display: block;
+  margin:30px auto;
+  border: 3px solid rgb(103, 32, 185);
+  padding: 14px 40px;
+  outline:none;
+  color: white;
+  border-radius:24px;
+  transition:0.35s;
+  cursor:pointer;
+}
+
+.box input[type="submit"]:hover{
+  background: rgba(255, 255, 255, 0.128);
+}
+
+
+
